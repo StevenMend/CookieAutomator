@@ -1,0 +1,8 @@
+n__pycache__/
+.venv/
+.idea/ 
+*.env
+*.db
+*.log
+*.sqlite3
+instance
