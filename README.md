@@ -1,22 +1,34 @@
-# CookieBot
-Una herramienta de automatización para jugar **Cookie Clicker**.
+# Cookie Clicker Automation / Automatización de Cookie Clicker
 
-## Características
-- Clics automáticos
-- Compra de mejoras
-- Registro de rendimiento
+## Overview / Descripción General
+This project automates the gameplay of "Cookie Clicker" using Selenium, a web automation tool. The goal is to simulate clicking on a cookie to earn cookies and purchase upgrades to increase the cookies produced per second (CPS).
 
-## Tecnologías Utilizadas
-- Python
+Este proyecto automatiza el juego "Cookie Clicker" utilizando Selenium, una herramienta de automatización web. El objetivo es simular clics en una galleta para ganar galletas y comprar mejoras que aumenten la producción de galletas por segundo (CPS).
+
+## Features / Características
+- **Automatic Cookie Clicking**: The script continuously clicks on the cookie.
+- **Upgrade Purchases**: Automatically buys upgrades based on affordability and their CPS value.
+- **CPS Logging**: Records cookies per second to a SQLite database every five minutes.
+- **Error Handling**: Includes error handling to manage issues during execution.
+
+- **Clics Automáticos en la Galleta**: El script hace clic continuamente en la galleta.
+- **Compras de Mejoras**: Compra automáticamente mejoras basándose en su asequibilidad y su valor de CPS.
+- **Registro de CPS**: Registra las galletas por segundo en una base de datos SQLite cada cinco minutos.
+- **Manejo de Errores**: Incluye manejo de errores para gestionar problemas durante la ejecución.
+
+## Requirements / Requisitos
+- Python 3.x
 - Selenium
-- SQLite
+- SQLite3
+- Google Chrome (or any compatible web browser)
 
-## Instrucciones de Uso
-1. Clona el repositorio.
-2. Instala las dependencias requeridas.
-3. Ejecuta el script `main.py`.
+- Python 3.x
+- Selenium
+- SQLite3
+- Google Chrome (o cualquier navegador web compatible)
 
-## Funcionamiento de la Base de Datos
-Los datos sobre el rendimiento del juego se guardan en una base de datos llamada `cookie_clicker.db`. La conexión a esta base de datos se establece al inicio del programa, pero **los registros no se efectúan hasta que han pasado 5 minutos de ejecución**. Esto se hace para asegurar que la información recopilada es significativa y que se han realizado suficientes interacciones en el juego, lo que permite un análisis más preciso del rendimiento a lo largo del tiempo.
-
-Esto asegura que la base de datos no se llene de datos irrelevantes o incompletos, y que los resultados reflejen el rendimiento real del bot durante un periodo sostenido.
+## Installation / Instalación
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd cookie-clicker-automation
